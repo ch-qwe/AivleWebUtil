@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "coding_masters util key",
-  "version": "0.2",
+  "version": "0.2.1",
   "description": "실행: alt+1, 채점하기: alt+2, 저장하기: alt+3, 제출하기: alt+4 코딩마스터 열기: alt+`",
   "content_scripts": [
     {
