@@ -19,6 +19,22 @@ window.addEventListener("keydown", (e) => {
       submit_btn.click();
     } else if (e.altKey && e.key == "`") {
       open_codingMasters();
+    } else if (e.altKey && e.key == ".") {
+      /*영상 프레임 앞으로*/
+      player = document.querySelector("#player video");
+      player.currentTime += 30;
+    } else if (e.altKey && e.key == ",") {
+      /*영상 프레임 뒤로*/
+      player = document.querySelector("#player video");
+      player.currentTime -= 30;
+    } else if (e.key == " ") {
+      /*영상 프레임 정지 재생*/
+      player = document.querySelector("#player video");
+      if (player.paused) {
+        player.play();
+      } else {
+        player.pause();
+      }
     }
   } catch (error) {}
 });
